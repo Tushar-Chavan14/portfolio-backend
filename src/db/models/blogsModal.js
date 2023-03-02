@@ -15,10 +15,12 @@ const blogSchema = mongoose.Schema(
     },
     description: {
       type: String,
+      default:"",
       trim: true,
     },
     link: {
       type: String,
+      default:"",
       trim: true,
     },
   },

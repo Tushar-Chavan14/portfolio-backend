@@ -9,11 +9,13 @@ const portfolioSchema = mongoose.Schema(
     },
     title: {
       type: String,
+      unique: true,
       required: true,
       trim: true,
     },
     tech: {
       type: String,
+      default: "",
       trim: true,
       required: true,
     },
